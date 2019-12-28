@@ -90,6 +90,7 @@ def movies_with_directors_set(movie_collection)
 
 #set up the loop to first isolate the director hash, then get the name and movie data from that hash
   while index < movie_collection.length do 
+    directors_info = movie_collection[index]
     binding.pry
     movies_by_director << movies_with_director_key([:director_name][index], movie_data)
   index += 1
