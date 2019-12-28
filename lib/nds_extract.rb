@@ -92,6 +92,7 @@ def movies_with_directors_set(movie_collection)
   while index < movie_collection.length do 
     directors_info = movie_collection[index]
     directors_name = directors_info[:name] 
+    directors_movies = directors_info[:movies]
     binding.pry
     movies_by_director << movies_with_director_key([:director_name][index], movie_data)
   index += 1
