@@ -93,8 +93,8 @@ def movies_with_directors_set(movie_collection)
     directors_info = movie_collection[index]
     directors_name = directors_info[:name] 
     directors_movies = directors_info[:movies]
-    binding.pry
-    movies_by_director << movies_with_director_key([:director_name][index], movie_data)
+    
+    movies_by_director << movies_with_director_key(directors_name, directors_movies)
   index += 1
   end
   
