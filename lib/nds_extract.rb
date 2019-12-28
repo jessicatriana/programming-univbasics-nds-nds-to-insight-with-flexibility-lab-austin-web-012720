@@ -70,7 +70,6 @@ end
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
 
-
 def movies_with_directors_set(movie_collection)
   movies_by_director = []
   index = 0 
