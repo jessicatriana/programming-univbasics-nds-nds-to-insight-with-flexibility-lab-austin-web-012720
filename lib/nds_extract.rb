@@ -89,7 +89,7 @@ def movies_with_directors_set(movie_collection)
   index = 0 
 
   while index < movie_collection.length do 
-    movies_by_director << movies_with_director_key([:name][index], movie_collection)
+    movies_by_director << movies_with_director_key([:director_name][index], movie_collection)
     
   index += 1
   end
